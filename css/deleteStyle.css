@@ -1,0 +1,12 @@
+.delete-btn{
+    background:#dc3545;
+    color:#fff;
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.delete-btn:hover{
+    background:#b02a37;
+}

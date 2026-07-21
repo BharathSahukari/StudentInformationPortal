@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    padding:30px;
+}
+
+/* Main Container */
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+/* Table Container */
+.table-container{
+    width:95%;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    padding:25px;
+    overflow-x:auto;
+}
+
+/* Header */
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.table-header h2{
+    color:#2563eb;
+    font-size:28px;
+    font-weight:600;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:1100px;
+}
+
+table th{
+    background:#2563eb;
+    color:#fff;
+    padding:14px;
+    text-align:center;
+    font-size:15px;
+}
+
+table td{
+    padding:14px;
+    border-bottom:1px solid #e5e7eb;
+    text-align:center;
+    vertical-align:middle;
+    color:#444;
+}
+
+table tr:nth-child(even){
+    background:#f9fbff;
+}
+
+table tr:hover{
+    background:#eef4ff;
+}
+
+/* Profile Image */
+table img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #2563eb;
+}
+
+/* Action Buttons */
+td:last-child{
+    white-space:nowrap;
+}
+
+.edit-btn,
+.delete-btn{
+    display:inline-block;
+    width:80px;
+    padding:8px 0;
+    margin:4px;
+    text-decoration:none;
+    color:#fff;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.edit-btn{
+    background:#22c55e;
+}
+
+.edit-btn:hover{
+    background:#16a34a;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+/* Back Button */
+.back-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+}
+
+/* Scrollbar */
+.table-container::-webkit-scrollbar{
+    height:8px;
+}
+
+.table-container::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:10px;
+}
+
+.table-container::-webkit-scrollbar-track{
+    background:#e5e7eb;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .table-container{
+        width:100%;
+        padding:15px;
+    }
+
+    .table-header h2{
+        font-size:22px;
+    }
+
+    table{
+        min-width:1000px;
+    }
+
+    .edit-btn,
+    .delete-btn{
+        width:70px;
+        font-size:13px;
+    }
+}
