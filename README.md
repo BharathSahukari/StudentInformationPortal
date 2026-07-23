@@ -1,4 +1,4 @@
-# 🎓 Student Management System (Task 3)
+# 🎓 Student Management System 
 
 A web-based **Student Management System** developed using **PHP, MySQL, HTML, CSS, and JavaScript**. The system enables administrators to manage student records through registration, profile management, and CRUD (Create, Read, Update, Delete) operations.
 
